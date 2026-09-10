@@ -33,7 +33,7 @@ export class NgxZendeskWebwidgetService {
 
     // tslint:disable
     window.zEmbed || function(e, t) {
-      let n, o, d, i, s, a = []
+      let n, o, d, i, s, a: any[] = []
       let r = document.createElement("iframe")
       window.zEmbed = function() {
         a.push(arguments)

@@ -6,10 +6,19 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
+    "noImplicitAny":false,
     "types": []
   },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "extendedDiagnostics": {
+      "checks": {
+        "nullishCoalescingNotNullable": "suppress",
+        "optionalChainNotNullable": "suppress"
+      }
+    }
+  }
 }
